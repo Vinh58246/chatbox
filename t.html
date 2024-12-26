@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./public/css/css_message.css">
+</head>
+<body>
+
+
+    
+    <div class="frame_content">
+        <div class="frame_in_content">
+            <img src="https://th.bing.com/th/id/OIP.OiJlx3T6DTV6fQvYZi2o_QHaFj?rs=1&pid=ImgDetMain" alt="" class="img_avatar">
+            <div class="ms-3 me-3">
+                <div class="mb-3">
+                    <h5>nguyen phuoc vinh</h5>
+                </div>
+                <div class="content_message">
+                    <div style="position: relative;">
+                        <div class="thang_li mb-3"><p class="thang_p">xin chao</p></div>
+                        <div class="editstop row">
+
+
+                            <div class="col-6 wrapper">
+                                <input type="checkbox" />
+                                <div class="btn">
+                                    <i class="fal fa-heart text-white"></i>
+                                </div>
+                                <div class="tooltip border">
+                                    <form class="rating" onsubmit="stopFormSubmit(event)">
+                                        <input type="radio" name="emoji_drop" id="idlike-${ei.id_message}">
+                                        <label class="cllike" value="${ei.id_message}" for="idlike-${ei.id_message}" onclick="chonemoji(this)">👍</label>
+                                        <input type="radio" name="emoji_drop" id="idhappy-${ei.id_message}">
+                                        <label class="clhappy" value="${ei.id_message}" for="idhappy-${ei.id_message}" onclick="chonemoji(this)">😆</label>
+                                        <input type="radio" name="emoji_drop" id="idsad-${ei.id_message}">
+                                        <label class="clsad" value="${ei.id_message}" for="idsad-${ei.id_message}" onclick="chonemoji(this)">😭</label>
+                                        <input type="radio" name="emoji_drop" id="idangry-${ei.id_message}">
+                                        <label class="clangry" value="${ei.id_message}" for="idangry-${ei.id_message}" onclick="chonemoji(this)">😡</label>
+                                        <input type="radio" name="emoji_drop" id="idfavourite-${ei.id_message}">
+                                        <label class="clfavourite" value="${ei.id_message}" for="idfavourite-${ei.id_message}" onclick="chonemoji(this)">😍</label>
+                                        <input type="radio" name="emoji_drop" id="idwow-${ei.id_message}">
+                                        <label class="clwow" value="${ei.id_message}" for="idwow-${ei.id_message}" onclick="chonemoji(this)">😮</label>
+                                    </form>
+                                </div>
+                                <svg></svg>
+                            </div>
+                            
+                            <div class="col-6 pe-2 ps-2 d-inline-flex bg-light rounded-5 border d-inline-block w-auto">
+                                <div>
+                                    <span>😮</span>
+                                </div>
+                                <span class='ms-1'>2</span>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <span class="text-secondary">11:32:20</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+      
+</body>
+</html>
